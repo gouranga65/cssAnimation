@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/58076750a2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            width: 98.7vw;
+            height: 565px;
+            object-fit: cover;
+        }
+        .question{
+            width: 200px;
+            height: 30px;
+            border-radius: 7px;
+            text-align: center;
+            padding-top: 10px;
+            font-size: 20px;
+            position: absolute;
+            left: 30px;
+            bottom: 25px;
+            color: black;
+            background-color: aliceblue;
+            cursor: pointer;
+        }
+        .answer{
+            width: 150px;
+            padding: 15px 0px;
+            text-align: center;
+            background-color: aliceblue;
+            color: black;
+            font-size: 20px;
+            position: absolute;
+            top: 42%;
+            left: 45%;
+            border-radius: 8px;
+            animation-name: animatemodal;
+            animation-duration: .4s;
+        }
+        .btn{
+            font-size: 20px;
+            background-color: aliceblue;
+            border:aliceblue;
+            padding-left: 15px;
+            cursor: pointer;
+            color: red;
+        }
+    </style>
+    <div class="picture">
+        <img src="./image/kazuend-19SC2oaVZW0-unsplash.jpg" alt="" srcset="">
+        <div class="question">
+            Wheres  Our Modal ?
+        </div>
+        <div class="answer">
+            Here I am ! <span><button class="btn"><i class="fa-solid fa-xmark"></i></button></span>
+        </div>
+    </div>
+</body>
+</html>
