@@ -45,6 +45,8 @@
             border-radius: 8px;
             animation-name: animatemodal;
             animation-duration: .4s;
+            display: none;
+            box-shadow: -2px 1px 24px -3px rgba(0,0,0,0.75);
         }
         .btn{
             font-size: 20px;
@@ -53,6 +55,16 @@
             padding-left: 15px;
             cursor: pointer;
             color: red;
+        }
+        @keyframes animatemodal{
+            from{
+                top:-300px;
+                opacity: 0;
+            }
+            to{
+                top: 50%;
+                opacity: 1;
+            }
         }
     </style>
     <div class="picture">
@@ -64,5 +76,14 @@
             Here I am ! <span><button class="btn"><i class="fa-solid fa-xmark"></i></button></span>
         </div>
     </div>
+    <script>
+        const answer=document.querySelector(".answer");
+        const question=document.querySelector(".question").addEventListener("click",function(){
+            answer.style.display="block"
+        })
+        const btn=document.querySelector(".btn").addEventListener('click',function(){
+            answer.style.display="none"
+        })
+    </script>
 </body>
 </html>
